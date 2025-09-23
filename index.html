@@ -138,6 +138,121 @@
             z-index: 2;
         }
         
+        #sobre {
+            width: 100%;
+            height: 931px;
+            padding: 200px 80px 80px 80px;
+            background: #EBEBEB;
+            display: flex;
+            align-items: flex-start;
+        }
+
+        #diferencial {
+            width: 100%;
+            height: 931px;
+            padding: 200px 80px 80px 80px;
+            background: #EBEBEB;
+            display: flex;
+            align-items: flex-start;
+        }
+
+        #aplicativo {
+            width: 100%;
+            height: 906px;
+            background: #FFFFFF;
+        }
+
+        #distribuicao {
+            width: 100%;
+            height: 953px;
+            background: #FFFFFF;
+            padding: 200px 80px 200px 80px;
+        }
+
+        .distribuicao-content {
+            display: flex;
+            flex-direction: column;
+            gap: 120px;
+            height: 100%;
+            align-items: flex-start;
+        }
+
+        .distribuicao-header {
+            max-width: 400px;
+        }
+
+        .distribuicao-title {
+            font-size: 3.75rem;
+            line-height: 1;
+            color: #181818;
+            font-family: 'Aeroport', sans-serif;
+            font-weight: 400;
+        }
+
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 90px;
+            width: 784px;
+        }
+
+        .card {
+            margin: 0;
+            padding: 0;
+            background: none;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            max-width: 220px;
+        }
+
+        .card-number {
+            font-size: 3rem;
+            line-height: 1;
+            color: #181818;
+            font-family: 'Aeroport', sans-serif;
+            font-weight: 400;
+        }
+
+        .card-subtitle {
+            font-size: 1.875rem;
+            line-height: 2.25rem;
+            color: #4D4D4D;
+            font-family: 'Aeroport', sans-serif;
+            font-weight: 400;
+        }
+
+        .card-paragraph {
+            font-size: 0.875rem;
+            line-height: 1.25rem;
+            color: #4D4D4D;
+            font-family: 'Aeroport', sans-serif;
+            font-weight: 400;
+        }
+        
+        .text-block {
+            max-width: 575px;
+            display: flex;
+            flex-direction: column;
+            gap: 52px;
+        }
+        
+        .about-title {
+            font-size: 2.25rem;
+            line-height: 2.5rem;
+            color: #181818;
+            font-family: 'Aeroport', sans-serif;
+            font-weight: 400;
+        }
+        
+        .about-paragraph {
+            font-size: 1.125rem;
+            line-height: 1.75rem;
+            color: #6B7280;
+            font-family: 'Aeroport', sans-serif;
+            font-weight: 400;
+        }
+        
         @media (max-width: 768px) {
             #header {
                 padding: 40px 20px;
@@ -159,6 +274,57 @@
                 font-size: 4rem;
                 max-width: 100%;
             }
+            
+            #sobre {
+                padding: 100px 20px 40px 20px;
+                height: auto;
+                min-height: 600px;
+            }
+
+            #diferencial {
+                padding: 100px 20px 40px 20px;
+                height: auto;
+                min-height: 600px;
+            }
+
+            #aplicativo {
+                height: auto;
+                min-height: 500px;
+            }
+
+            #distribuicao {
+                padding: 100px 20px 100px 20px;
+                height: auto;
+                min-height: 600px;
+            }
+
+            .distribuicao-header {
+                max-width: 100%;
+            }
+
+            .distribuicao-title {
+                font-size: 2.5rem;
+            }
+
+            .cards-grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+            
+            .text-block {
+                max-width: 100%;
+                gap: 32px;
+            }
+            
+            .about-title {
+                font-size: 1.875rem;
+                line-height: 2.25rem;
+            }
+            
+            .about-paragraph {
+                font-size: 1rem;
+                line-height: 1.5rem;
+            }
         }
         
         @media (max-width: 480px) {
@@ -178,6 +344,19 @@
             .logo {
                 width: 120px;
                 height: 22px;
+            }
+            
+            #sobre {
+                padding: 80px 15px 30px 15px;
+            }
+
+            #diferencial {
+                padding: 80px 15px 30px 15px;
+            }
+            
+            .about-title {
+                font-size: 1.5rem;
+                line-height: 2rem;
             }
         }
         
@@ -230,5 +409,48 @@
         
         <h1 class="title">Sua música ouvida por milhões</h1>
     </header>
+
+    <section id="sobre">
+        <div class="text-block">
+            <h2 class="about-title">A MuvFlow é a primeira plataforma Full Stack de inteligência artificial que substitui toda essa cadeia.</h2>
+            <p class="about-paragraph">Em um único ambiente, é possível compor, gravar e distribuir globalmente uma música completa. O mesmo processo custa apenas US$ 0,06 por faixa, democratizando o acesso e permitindo que qualquer pessoa se torne artista com alcance mundial.</p>
+        </div>
+    </section>
+
+    <section id="diferencial">
+        <div class="text-block">
+            <h2 class="about-title">O diferencial não esta apenas no uso da IA, mas na infraestrutura já construída.</h2>
+            <p class="about-paragraph">A MuvFlow é simultaneamente editora, gravadora e distribuidora digital, conectada diretamente a dezenas de plataformas de streaming. Esse ecossistema garante a maximização de royalties e captura de toda a cadeia de receita. Replicar essa estrutura legal, regulatória e comercial exige anos de construção e credibilidade, criando uma barreira de entrada significativa.</p>
+        </div>
+    </section>
+
+    <section id="aplicativo">
+    </section>
+
+    <section id="distribuicao">
+        <div class="distribuicao-content">
+            <div class="distribuicao-header">
+                <h2 class="distribuicao-title">Entenda como é feito toda a distribuição</h2>
+            </div>
+            
+            <div class="cards-grid">
+                <div class="card">
+                    <h3 class="card-number">1.</h3>
+                    <h4 class="card-subtitle">Você cria sua música com IA</h4>
+                    <p class="card-paragraph">Você cria a música e cuidamos de tudo para o lançamento da música conforme as especificações técnicas das plataformas.</p>
+                </div>
+                <div class="card">
+                    <h3 class="card-number">2.</h3>
+                    <h4 class="card-subtitle">Distribuidora coleta os dados</h4>
+                    <p class="card-paragraph">A distribuidora, ponte entre você e os serviços de streaming, recebe e faz a divulgação nas plataformas digitais a sua escolha.</p>
+                </div>
+                <div class="card">
+                    <h3 class="card-number">3.</h3>
+                    <h4 class="card-subtitle">Monetização e Royalties</h4>
+                    <p class="card-paragraph">A cada vez que alguém ouve sua música, é gerado um royalty e repassado diretamente para você, sem letras miúdas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
