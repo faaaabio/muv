@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MUVFlow - Sua música ouvida por milhões</title>
+    <!-- Adicionando o CDN do Tailwind CSS para usar as classes utilitárias -->
+    <script src="https://cdn.tailwindcss.com"></script>
     <style>
         @font-face {
             font-family: 'Aeroport';
             src: url('https://ofabio.s3.sa-east-1.amazonaws.com/muv/Aeroport.otf') format('opentype');
-            font-weight: normal;
+            font-weight: 300;
             font-style: normal;
         }
         
@@ -20,6 +22,7 @@
         
         body {
             font-family: 'Aeroport', sans-serif;
+            font-weight: 300; /* Default weight */
         }
         
         #header {
@@ -128,15 +131,53 @@
             transition: all 0.3s ease;
         }
         
-        .title {
-            font-size: 6rem;
+        /* Typography HIERARCHY */
+        
+        .about-title { /* H2 */
+            font-size: 36px;
+            line-height: 44px;
             font-weight: 300;
-            line-height: 1.1;
-            max-width: 800px;
-            font-family: 'Aeroport', sans-serif;
-            position: relative;
-            z-index: 2;
+            letter-spacing: -0.01em;
+            color: #181818;
         }
+        
+        .distribuicao-title { /* H2 */
+            font-size: 36px;
+            line-height: 44px;
+            font-weight: 300;
+            letter-spacing: -0.01em;
+            color: #181818;
+        }
+        
+        .card-number { /* Keeping the visual style but updating font-weight to match H3 */
+            font-size: 3rem;
+            line-height: 1;
+            color: #181818;
+            font-weight: 300;
+        }
+        
+        .card-subtitle { /* H4 */
+            font-size: 24px;
+            line-height: 32px;
+            font-weight: 300;
+            color: #4D4D4D;
+        }
+        
+        .about-paragraph { /* Body Large */
+            font-size: 18px;
+            line-height: 28px;
+            font-weight: 300;
+            color: #6B7280;
+        }
+        
+        .card-paragraph { /* Body Small */
+            font-size: 14px;
+            line-height: 20px;
+            font-weight: 300;
+            color: #4D4D4D;
+        }
+
+        /* End Typography HIERARCHY */
         
         #sobre {
             width: 100%;
@@ -193,14 +234,6 @@
             max-width: 366px;
         }
 
-        .distribuicao-title {
-            font-size: 3.75rem;
-            line-height: 1;
-            color: #181818;
-            font-family: 'Aeroport', sans-serif;
-            font-weight: 400;
-        }
-
         .cards-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -217,52 +250,12 @@
             gap: 20px;
             max-width: 200px;
         }
-
-        .card-number {
-            font-size: 3rem;
-            line-height: 1;
-            color: #181818;
-            font-family: 'Aeroport', sans-serif;
-            font-weight: 400;
-        }
-
-        .card-subtitle {
-            font-size: 1.875rem;
-            line-height: 2.25rem;
-            color: #4D4D4D;
-            font-family: 'Aeroport', sans-serif;
-            font-weight: 400;
-        }
-
-        .card-paragraph {
-            font-size: 0.875rem;
-            line-height: 1.25rem;
-            color: #4D4D4D;
-            font-family: 'Aeroport', sans-serif;
-            font-weight: 400;
-        }
         
         .text-block {
             max-width: 575px;
             display: flex;
             flex-direction: column;
             gap: 52px;
-        }
-        
-        .about-title {
-            font-size: 2.25rem;
-            line-height: 2.5rem;
-            color: #181818;
-            font-family: 'Aeroport', sans-serif;
-            font-weight: 400;
-        }
-        
-        .about-paragraph {
-            font-size: 1.125rem;
-            line-height: 1.75rem;
-            color: #6B7280;
-            font-family: 'Aeroport', sans-serif;
-            font-weight: 400;
         }
         
         @media (max-width: 768px) {
@@ -283,8 +276,10 @@
             }
             
             .title {
-                font-size: 4rem;
+                font-size: 36px;
+                line-height: 44px;
                 max-width: 100%;
+                font-weight: 300;
             }
             
             #sobre {
@@ -315,7 +310,9 @@
             }
 
             .distribuicao-title {
-                font-size: 2.5rem;
+                font-size: 28px;
+                line-height: 36px;
+                font-weight: 300;
             }
 
             .cards-grid {
@@ -329,13 +326,15 @@
             }
             
             .about-title {
-                font-size: 1.875rem;
-                line-height: 2.25rem;
+                font-size: 28px;
+                line-height: 36px;
+                font-weight: 300;
             }
             
             .about-paragraph {
-                font-size: 1rem;
-                line-height: 1.5rem;
+                font-size: 16px;
+                line-height: 24px;
+                font-weight: 300;
             }
         }
         
@@ -349,8 +348,9 @@
             }
             
             .title {
-                font-size: 2.5rem;
-                line-height: 1.2;
+                font-size: 24px;
+                line-height: 32px;
+                font-weight: 300;
             }
             
             .logo {
@@ -367,8 +367,9 @@
             }
             
             .about-title {
-                font-size: 1.5rem;
-                line-height: 2rem;
+                font-size: 20px;
+                line-height: 28px;
+                font-weight: 300;
             }
         }
         
@@ -382,7 +383,9 @@
             }
             
             .title {
-                font-size: 2rem;
+                font-size: 18px;
+                line-height: 26px;
+                font-weight: 300;
             }
         }
     </style>
@@ -419,7 +422,8 @@
             </div>
         </nav>
         
-        <h1 class="title">Sua música ouvida por milhões</h1>
+        <!-- O título foi atualizado para ter uma largura máxima de 470px e ser alinhado à esquerda. -->
+        <h1 class="text-8xl font-light leading-tight tracking-tighter max-w-[470px] relative z-10">Sua música ouvida por milhões</h1>
     </header>
 
     <section id="sobre">
