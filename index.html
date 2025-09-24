@@ -253,7 +253,6 @@
 
         #beneficios {
             width: 100%;
-            height: 900px;
             padding: 200px 80px 200px 80px;
             background: #FFFFFF;
             border-top: 1px solid #D1D5DB;
@@ -342,12 +341,65 @@
             width: 100%;
         }
 
+        .vantagens-list {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .vantagem-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 32px 0;
+            border-bottom: 1px solid #D1D5DB;
+        }
+
+        .vantagem-content {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            flex: 1;
+            max-width: 420px;
+        }
+
         .vantagem-title {
             font-size: 1.125rem;
             line-height: 1.75rem;
             color: #4D4D4D;
             font-family: 'Aeroport', sans-serif;
             font-weight: 400;
+        }
+
+        .vantagem-paragraph {
+            font-size: 0.875rem;
+            line-height: 1.25rem;
+            color: #9CA3AF;
+            font-family: 'Aeroport', sans-serif;
+            font-weight: 400;
+        }
+
+        .vantagem-planos {
+            display: flex;
+            gap: 80px;
+            margin-left: 40px;
+        }
+
+        .vantagem-plano {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 16px 24px;
+            width: 180px;
+        }
+
+        .vantagem-plano-text {
+            font-size: 1.125rem;
+            line-height: 1.75rem;
+            color: #6B7280;
+            font-family: 'Aeroport', sans-serif;
+            font-weight: 400;
+            text-align: center;
         }
 
         #mercado {
@@ -1080,7 +1132,78 @@
             </div>
             
             <div class="vantagens-block">
-                <h3 class="vantagem-title">Seja incluída/o em playlists</h3>
+                <div class="vantagens-list">
+                    <div class="vantagem-item">
+                        <div class="vantagem-content">
+                            <h3 class="vantagem-title">Seja incluída/o em playlists</h3>
+                            <p class="vantagem-paragraph">Assinantes que optarem por participar podem ser destacadas/os em playlists, seguidas/os por futuros fãs, A&Rs e muito mais.</p>
+                        </div>
+                        <div class="vantagem-planos">
+                            <div class="vantagem-plano">
+                                <p class="vantagem-plano-text">2 faixas por mês</p>
+                            </div>
+                            <div class="vantagem-plano">
+                                <p class="vantagem-plano-text">Ilimitado</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vantagem-item">
+                        <div class="vantagem-content">
+                            <h3 class="vantagem-title">Distribuição global</h3>
+                            <p class="vantagem-paragraph">Suas músicas estarão disponíveis em todas as principais plataformas de streaming mundiais com apenas um clique.</p>
+                        </div>
+                        <div class="vantagem-planos">
+                            <div class="vantagem-plano">
+                                <p class="vantagem-plano-text">✓</p>
+                            </div>
+                            <div class="vantagem-plano">
+                                <p class="vantagem-plano-text">✓</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vantagem-item">
+                        <div class="vantagem-content">
+                            <h3 class="vantagem-title">Métricas avançadas</h3>
+                            <p class="vantagem-paragraph">Acompanhe o desempenho das suas músicas com dados detalhados de reproduções, geografia e demografias dos ouvintes.</p>
+                        </div>
+                        <div class="vantagem-planos">
+                            <div class="vantagem-plano">
+                                <p class="vantagem-plano-text">Básico</p>
+                            </div>
+                            <div class="vantagem-plano">
+                                <p class="vantagem-plano-text">Completo</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vantagem-item">
+                        <div class="vantagem-content">
+                            <h3 class="vantagem-title">Suporte prioritário</h3>
+                            <p class="vantagem-paragraph">Receba atendimento personalizado com nossa equipe especializada para tirar dúvidas e resolver questões rapidamente.</p>
+                        </div>
+                        <div class="vantagem-planos">
+                            <div class="vantagem-plano">
+                                <p class="vantagem-plano-text">-</p>
+                            </div>
+                            <div class="vantagem-plano">
+                                <p class="vantagem-plano-text">✓</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vantagem-item">
+                        <div class="vantagem-content">
+                            <h3 class="vantagem-title">Recursos de IA premium</h3>
+                            <p class="vantagem-paragraph">Acesse funcionalidades avançadas de inteligência artificial para criação musical, mixagem automática e masterização profissional.</p>
+                        </div>
+                        <div class="vantagem-planos">
+                            <div class="vantagem-plano">
+                                <p class="vantagem-plano-text">Limitado</p>
+                            </div>
+                            <div class="vantagem-plano">
+                                <p class="vantagem-plano-text">Ilimitado</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
