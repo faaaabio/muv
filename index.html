@@ -255,6 +255,96 @@
             border-bottom: 1px solid #D1D5DB;
         }
 
+        .beneficios-container {
+            display: flex;
+            flex-direction: column;
+            gap: 70px;
+            width: 100%;
+            height: 100%;
+        }
+
+        .planos-block {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .planos-title {
+            font-size: 2.25rem;
+            line-height: 2.5rem;
+            color: #181818;
+            font-family: 'Aeroport', sans-serif;
+            font-weight: 400;
+            width: 250px;
+        }
+
+        .valores-block {
+            width: auto;
+            display: flex;
+            gap: 80px;
+        }
+
+        .card-plano {
+            width: auto;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .plano-name {
+            font-size: 1.5rem;
+            line-height: 2rem;
+            color: #181818;
+            font-family: 'Aeroport', sans-serif;
+            font-weight: 400;
+            width: 180px;
+            margin: 0 auto;
+        }
+
+        .plano-price {
+            font-size: 1.5rem;
+            line-height: 2rem;
+            color: #181818;
+            font-family: 'Aeroport', sans-serif;
+            font-weight: 400;
+            width: 180px;
+            margin: 0 auto;
+        }
+
+        .plano-button {
+            padding: 30px;
+            border-radius: 24px;
+            font-size: 1.125rem;
+            font-family: 'Aeroport', sans-serif;
+            font-weight: 400;
+            border: none;
+            cursor: pointer;
+        }
+
+        .plano-button.basico {
+            background: #EBEBEB;
+            color: #181818;
+        }
+
+        .plano-button.pro {
+            background: #181818;
+            color: #FFFFFF;
+        }
+
+        .vantagens-block {
+            width: 100%;
+        }
+
+        .vantagem-title {
+            font-size: 1.125rem;
+            line-height: 1.75rem;
+            color: #4D4D4D;
+            font-family: 'Aeroport', sans-serif;
+            font-weight: 400;
+        }
+
         #mercado {
             width: 100%;
             height: 940px;
@@ -323,10 +413,33 @@
             font-weight: 400;
         }
 
+        .ecossistema-content {
+            max-width: 600px;
+            display: flex;
+            flex-direction: column;
+            gap: 64px;
+        }
+
+        .ecossistema-title {
+            font-size: 3.75rem;
+            line-height: 1;
+            color: #FFFFFF;
+            font-family: 'Aeroport', sans-serif;
+            font-weight: 400;
+        }
+
+        .ecossistema-paragraph {
+            font-size: 1.125rem;
+            line-height: 1.75rem;
+            color: #FFFFFF;
+            font-family: 'Aeroport', sans-serif;
+            font-weight: 400;
+        }
+
         #ecossistema {
             width: 100%;
             height: 940px;
-            padding: 200px 80px 200px 80px;
+            padding: 140px 80px 200px 80px;
             background: #181818;
             display: flex;
             flex-direction: column;
@@ -608,6 +721,27 @@
     </section>
 
     <section id="beneficios">
+        <div class="beneficios-container">
+            <div class="planos-block">
+                <h2 class="planos-title">Compare os benefícios do seu plano atual</h2>
+                <div class="valores-block">
+                    <div class="card-plano">
+                        <h3 class="plano-name">Básico</h3>
+                        <h4 class="plano-price">Grátis</h4>
+                        <button class="plano-button basico">Plano atual</button>
+                    </div>
+                    <div class="card-plano">
+                        <h3 class="plano-name">Pro</h3>
+                        <h4 class="plano-price">R$ 19,90 por mês</h4>
+                        <button class="plano-button pro">Assinar agora</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="vantagens-block">
+                <h3 class="vantagem-title">Seja incluída/o em playlists</h3>
+            </div>
+        </div>
     </section>
 
     <section id="mercado">
@@ -632,6 +766,11 @@
                 <path d="M91.9249 4.10449H94.8147L90.9435 23.5825H88.0537L91.9249 4.10449Z" fill="currentColor"/>
                 <path d="M89.1826 7.06727H79.8504L78.8343 12.3475H87.9526L87.391 15.3102H78.2728L76.6952 23.5825H73.7271L77.4973 4.10449H89.7441L89.1826 7.06727Z" fill="currentColor"/>
             </svg>
+        </div>
+        
+        <div class="ecossistema-content">
+            <h2 class="ecossistema-title">Único ambiente para compor, gravar e distribuir globalmente</h2>
+            <p class="ecossistema-paragraph">A MuvFlow nasce da experiência acumulada na criação da Hurst Capital, a maior plataforma de investimentos alternativos da América Latina, e da Muv Capital, hoje o maior investidor em música da região. Essa trajetória permitiu desenvolver conhecimento profundo, licenças e sistemas únicos que se transformaram na base para um produto com real capacidade de disrupção global.</p>
         </div>
     </section>
 
