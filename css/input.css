@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: 'Aeroport';
+    src: url('../fonts/Aeroport.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@theme {
+    --font-aeroport: "Aeroport", sans-serif;
+
+    --color-muv-dark: #181818;
+    --color-muv-gray: #4D4D4D;
+    --color-muv-light: #EBEBEB;
+    --color-muv-aux: #9CA3AF;
+    --color-muv-aux2: #6B7280;
+    --color-muv-border: #D1D5DB;
+}
+
+/* Header styles */
+.header-overlay::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+/* Interactive link section */
+.link-section-hover:hover,
+.link-section-hover:focus,
+.link-section-hover:active {
+    background-image: url('../images/bg-link.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.link-section-hover:hover .link-title,
+.link-section-hover:focus .link-title,
+.link-section-hover:active .link-title {
+    color: #FFFFFF !important;
+}
